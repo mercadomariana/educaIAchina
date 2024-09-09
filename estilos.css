@@ -1,0 +1,1004 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+html{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: #FBF8F0;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: x-large;
+}
+h2{
+    font-weight: 650;
+    font-size: 250%;
+}
+p{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.contenedorHeader{
+    width: 100%;
+}
+
+.textoH1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25%; margin-left: 25%; 
+}
+.tituloinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%; margin-bottom: 5%;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.elegir1-contenedor, .elegir2-contenedor, .elegir3-contenedor, .elegir4-contenedor {
+    display: flex;
+    justify-content: baseline;
+    position: relative; /* Ensures hover elements are positioned relative to the static image */
+    margin-top: 15%;
+    z-index: 1; /* Set a lower z-index for the static images */
+}
+
+.elegir1hover-contenedor, .elegir2hover-contenedor, .elegir3hover-contenedor, .elegir4hover-contenedor {
+    visibility: hidden;
+    width: 21vw; /* Same size as the static images */
+    height: 20vw; /* Same size as the static images */
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: 8; /* Set a higher z-index for the GIFs so they appear on top */
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Initially hidden */
+}
+
+.elegir1-contenedor:hover .elegir1hover-contenedor,
+.elegir2-contenedor:hover .elegir2hover-contenedor,
+.elegir3-contenedor:hover .elegir3hover-contenedor,
+.elegir4-contenedor:hover .elegir4hover-contenedor {
+    visibility: visible;
+    opacity: 1;
+}
+
+#gif, #gif2, #gif3, #gif4 {
+    width: 21vw; 
+    height: 20vw;
+}
+
+.elegir1y3 {
+    margin-left: 7%; 
+    margin-right: 7%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 20%;
+}
+
+.elegir2y4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.tituloLineaTiempo {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.elegir1-contenedor:hover .elegir1 img,
+.elegir2-contenedor:hover .elegir2 img,
+.elegir3-contenedor:hover .elegir3 img,
+.elegir4-contenedor:hover .elegir4 img {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.elegir1-contenedor:hover .elegir1hover-contenedor,
+.elegir2-contenedor:hover .elegir2hover-contenedor,
+.elegir3-contenedor:hover .elegir3hover-contenedor,
+.elegir4-contenedor:hover .elegir4hover-contenedor {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
+
+/*.contenedorLineaTiempo{
+    margin-left: 7%; margin-right: 7%; margin-top: 10%;
+}*/
+.linea{
+    background-color: #E5A63D;
+    height: 1.5%; width: 180%;
+    position: relative;
+    bottom: 10%;
+}
+.anos{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    position: relative;
+    bottom: 2vw;
+}
+.anos img{
+    width: 14vw;
+}
+/*2015*/
+#ano2015{
+    width: 11vw;
+}
+.contenedorAno2015{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.escondido2015{
+    display: none;
+    width: 10vw;
+}
+#ano2015:hover + .escondido2015{
+    display: flex;
+    
+}
+/*2017*/
+.contenedorAno2017{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.escondido2017{
+    display: none;
+    position: relative;
+    left: 5vw;
+}
+#ano2017:hover + .escondido2017{
+    display: flex;
+}
+/*2019*/
+.contenedorAno2019{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.escondido2019{
+    display: none;
+    position: relative;
+    left: 2vw;
+}
+#ano2019:hover + .escondido2019{
+    display: flex;
+}
+/*2020*/
+.contenedorAno2020{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.escondido2020{
+    display: none;
+    position: relative;
+    left: 2vw;
+}
+#ano2020:hover + .escondido2020{
+    display: flex;
+}
+/*2023*/
+.contenedorAno2023{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.escondido2023{
+    display: none;
+    position: relative;
+    left: 2vw;
+}
+#ano2023:hover + .escondido2023{
+    display: flex;
+}
+
+.ministroYdato{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+
+}
+.ministro{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.ministro p{
+    color: #717171;
+}
+.ministro img{
+    filter: grayscale(100%);
+    width: 100%;
+}
+.datocurioso{
+    margin-top: 10%;
+    width: 396px; height: 360px;
+    background-image: url(img/sabiasque.svg);
+}
+.datocurioso:hover{
+    background-image: url(img/datocurioso.svg);
+}
+
+
+/* DIAGRAMA DE VENN*/
+
+.venn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    bottom: 30vw;
+}
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+   
+    cursor: pointer; /* Añadido para indicar que se puede hacer clic */
+}
+
+.left-circle {
+    left: calc(50% - 335px);
+    opacity: .7;
+}
+
+.right-circle {
+    left: calc(50% - 50px);
+    opacity: .7;
+}
+
+
+.overlap {
+    position: absolute;
+    top: 50%;
+    left: 49.2%;
+    width: 10px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+    opacity: 1;
+    transition: width 0.3s ease, height 0.3s ease;
+    transform: scale(1.1); 
+}
+
+
+.left-circle-text, .rigth-circle-text, .overlap-text {
+    display: none; /* Inicialmente ocultamos los textos */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.left-circle-text {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%); /* Centers the text inside the circle */
+    color: rgb(0, 0, 0); /* Adjust text color for visibility */
+    font-size: 18px; /* Adjust font size as needed */
+    text-align: left;
+    z-index: 2; /* Ensure text is on top of the image */
+}
+
+.rigth-circle-text{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%); /* Centers the text inside the circle */
+    color: rgb(0, 0, 0); /* Adjust text color for visibility */
+    font-size: 18px; /* Adjust font size as needed */
+    text-align: left;
+    z-index: 2; /* Ensure text is on top of the image */
+
+}
+
+
+.overlap.active {
+    transform: scale(1.5);
+}
+
+.left-circle.active {
+    transform: scale(1.1); /* Agrandar la imagen al hacer clic */
+    opacity: 1;
+}
+.right-circle.active{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.left-circle-text, .rigth-circle-text, .overlap-text, 
+.left-circle-text2, .left-circle-text3, 
+.rigth-circle-text2, .rigth-circle-text3{
+    display: none; /* Inicialmente ocultamos todos los textos */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.overlap-text {
+    color: rgb(255, 255, 255); /* Ajusta el color según el fondo de la imagen */
+    font-size: 15.5px; /* Ajusta el tamaño de la fuente */
+    text-align: center;
+}
+
+span{
+    font-family: 'Alegreya Sans';
+}
+
+
+.imagenEstudiantes{
+    position: relative;
+    top: 10vw; right: 12vw;
+    
+  }
+
+  .imagenProfesor{
+    position: relative;
+    top: 10vw; left: 12vw;
+    filter: grayscale(100%);
+  }
+
+  .imagenesVenn{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    z-index: -5;
+  }
+
+  .estudiantes{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 25vw;
+  }
+
+  .estudiantes span{
+    font-size:larger;
+    font-weight: 600;
+    font-family: 'Alegreya Sans SC';
+  }
+.lineaEstudiantes{
+    height: .5vh;
+    background-color: #E5A63D;
+    width: 130%;
+}
+
+.profesores{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    left: 25vw;
+  }
+  .profesores span{
+    font-size:larger;
+    font-weight: 600;
+    font-family: 'Alegreya Sans SC';
+  }
+.lineaProfesores{
+    height: .5vh;
+    background-color: #C75F5F;
+    width: 150%;
+}
+
+.textoVenn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*VENTAJAS Y DESVENTAJAS*/
+
+.tituloVyD{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 32vw;
+}
+
+
+/* IMAGEN DE VENTAJAS Y DESVENTAJAS */
+.center-img {
+    position: relative; /* Posiciona el contenedor de la imagen de forma absoluta */
+    bottom: 114vh; /* Ajusta la distancia desde el borde inferior */
+    left: 50%; /* Posiciona el contenedor en el centro horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición horizontal para centrarlo */
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    display: inline-block; /* Asegura que la imagen se comporte como un bloque en línea */
+    z-index: 1; /* Coloca la imagen detrás del botón */
+}
+
+/* Asegúrate de que el contenedor de la imagen esté posicionado correctamente */
+.fixed-image {
+    position: relative; /* O absolute, si prefieres que se mueva con el contenido */
+    top: -500px; /* Ajusta según sea necesario */
+    left: 300px;/* Ajusta según sea necesario */
+    z-index: 1000; /* Asegúrate de que esté sobre otros contenidos */
+    width: fit-content;
+}
+
+.fixed-image img {
+    max-width: 280px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+.fixede-image {
+    position: relative; /* O absolute, si prefieres que se mueva con el contenido */
+    top: -645px; /* Ajusta según sea necesario */
+    left: 900px;/* Ajusta según sea necesario */
+    z-index: 1000; /* Asegúrate de que esté sobre otros contenidos */
+    width: fit-content;
+}
+
+.fixede-image img {
+    max-width: 280px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+.text-ventajas{
+    color: white;
+ text-align: center;
+ position: relative;
+ bottom: 73px;
+}
+.text-ventajas h4{
+    font-size: 25px;
+    font-weight: 450;
+}
+.text-desventajas{
+    color: white;
+ text-align: center;
+ position: relative;
+ bottom: 73px;
+}
+.text-desventajas h4{
+    font-size: 25px;
+    font-weight: 450;
+}
+
+/* PRIMER VENTAJA */
+.toggle-header {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center;
+    z-index: 2; /* Coloca el botón por encima de la imagen */
+    position: absolute;
+    top: 3815px; left: 545px;
+}
+.toggle-button {
+    color: rgb(255, 255, 255);
+    font-size: 55px; /* Tamaño del símbolo '+' */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* Ajusta este valor para aumentar/disminuir el espacio entre el botón y el texto */
+    border: none; /* Elimina el borde */
+    background: none; /* Elimina el fondo */
+    cursor: pointer; /* Cambia el cursor para indicar que es un botón clickeable */
+    
+    z-index: 3; /* Coloca el botón por encima de otros elementos en el contenedor */
+}
+.toggle-text {
+    font-size: 26px; /* Tamaño del texto */
+    position: relative;
+    right: 30vw; top: 2.5vw;
+}
+.toggle-description {
+    visibility: hidden; /* Oculta el texto por defecto */
+    text-align: center; /* Centra el texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio entre el botón y el texto */
+    position: relative;
+    right: 28VW; top: 2vw;
+}
+
+/* SEGUNDA VENTAJA */
+.toggle-header2 {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center;
+    z-index: 2; /* Coloca el botón por encima de la imagen */
+    position: absolute;
+    top: 3965px; left: 550px;
+}
+.toggle-text2 {
+    font-size: 26px; /* Tamaño del texto */
+    position: relative;
+    left: 30vw; top: 2.5vw;
+}
+.toggle-description2 {
+    visibility: hidden; /* Oculta el texto por defecto */
+    text-align: left; /* Centra el texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio entre el botón y el texto */
+    position: relative;
+    left: 31VW; top: 2vw;
+}
+
+
+/*TERCERA VENTAJA*/
+.toggle-header3 {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center;
+    z-index: 2; /* Coloca el botón por encima de la imagen */
+    position: absolute;
+    top: 4108px; left: 568px;
+}
+.toggle-text3 {
+    font-size: 26px; /* Tamaño del texto */
+    position: relative;
+    right: 30vw; top: 2.5vw;
+}
+.toggle-description3 {
+    visibility: hidden; /* Oculta el texto por defecto */
+    text-align: left; /* Centra el texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio entre el botón y el texto */
+    position: relative;
+    right: 29.5VW; top: 2vw;
+}
+
+
+/*CUARTA VENTAJA*/
+.toggle-header4 {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center;
+    z-index: 2; /* Coloca el botón por encima de la imagen */
+    position: absolute;
+    top: 4287px; left: 548px;
+}
+.toggle-text4 {
+    font-size: 26px; /* Tamaño del texto */
+    position: relative;
+    left: 30vw; top: -35px;
+}
+.toggle-description4 {
+    visibility: hidden; /* Oculta el texto por defecto */
+    text-align: left; /* Centra el texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio entre el botón y el texto */
+    position: relative;
+    left: 32VW; top: 0vw;
+    width: 350px;
+}
+
+/*QUINTA VENTAJA*/
+.toggle-header5 {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center;
+    z-index: 2; /* Coloca el botón por encima de la imagen */
+    position: absolute;
+    top: 4430px; left: 532px;
+}
+.toggle-text5 {
+    font-size: 26px; /* Tamaño del texto */
+    position: relative;
+    right: 32vw; top: -2.5vw;
+}
+.toggle-description5 {
+    visibility: hidden; /* Oculta el texto por defecto */
+    text-align: left; /* Centra el texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio entre el botón y el texto */
+    position: relative;
+    right: 28VW; top: 0vw;
+    width: 400px;
+}
+
+/*SEXTA VENTAJA*/
+.toggle-header6 {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center;
+    z-index: 2; /* Coloca el botón por encima de la imagen */
+    position: absolute;
+    top: 4580px; left: 525px;
+}
+.toggle-text6 {
+    font-size: 26px; /* Tamaño del texto */
+    position: relative;
+    LEFT: 30vw; top: -2.5vw;
+}
+.toggle-description6 {
+    visibility: hidden; /* Oculta el texto por defecto */
+    text-align: left; /* Centra el texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio entre el botón y el texto */
+    position: relative;
+    left: 33.7VW; top: 0vw;
+    width: 400px;
+}
+
+
+
+/*GRAFICO*/
+.tituloGrafico{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 49vw;
+}
+
+.contenedorGrafico{
+    margin-left: 7%; margin-right: 7%; margin-top: 10%;
+}
+
+.bordesGrafico{
+    border-left: .25vw solid #717171;
+    border-bottom: .25vw solid #717171;
+    margin-left: 10%; margin-top: 5%;
+    width: 70%; height: 71%;
+    position: relative;
+    bottom: 800px;
+}
+
+.lineaGrafico{
+    opacity: .2;
+    width: 100%; 
+    border: .01vw rgba(113, 113, 113, 25) solid;
+    background-color: #717171;
+}
+.contenedorLineaGrafico{
+    padding-top: 5.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+.amarillo{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+}
+.rojo{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+}
+.amarillo p{
+    padding-left: 25%;
+}
+.rojo p{
+    padding-left: 25%;
+    color: #FBF8F0;
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: rgba(113, 113, 113, 25);
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+.graficoAmarillo2015{
+    background-color: #FBF8F0;
+    width: 10%; height: 10.9vw;
+    position: relative;
+    bottom: 11.3vw !important;
+    border: .1vw rgba(113, 113, 113, 25) solid;
+    animation: blink 1.8s infinite ease-in-out;
+}
+.graficoAmarillo2015 p{
+    visibility: hidden;
+}
+.amarillo2015Hover{
+    background-color: #E5A63D;
+    width: 10.2%; height: 11vw;
+    position: relative;
+    bottom: 11.3vw !important;
+    border: none;
+}
+.amarillo2015Hover p{
+    visibility: visible;
+}
+
+.graficoAmarillo2016{
+    background-color: #FBF8F0;
+    width: 10%; height: 11.7vw;
+    position: relative;
+    bottom: 12.1vw !important;
+    border: .1vw rgba(113, 113, 113, 25) solid;
+    animation: blink 1.8s infinite ease-in-out;
+}
+.graficoAmarillo2016 p{
+    visibility: hidden;
+}
+.amarillo2016Hover{
+    background-color: #E5A63D;
+    width: 10%; height: 11.7vw;
+    position: relative;
+    bottom: 12.1vw !important;
+}
+.amarillo2016Hover p{
+    visibility: visible;
+}
+
+.graficoAmarillo2017{
+    background-color: #FBF8F0;
+    width: 10%; height: 12.6vw;
+    position: relative;
+    bottom: 13vw !important;
+    border: .1vw rgba(113, 113, 113, 25) solid;
+    animation: blink 1.8s infinite ease-in-out;
+}
+.graficoAmarillo2017 p{
+    visibility: hidden;
+}
+.amarillo2017Hover{
+    background-color: #E5A63D;
+    width: 10%; height: 12.6vw;
+    position: relative;
+    bottom: 13vw !important;
+}
+.amarillo2017Hover p{
+    visibility: visible;
+}
+
+.graficoAmarillo2018{
+    background-color: #FBF8F0;
+    width: 10%; height: 12.1vw;
+    position: relative;
+    bottom: 12.5vw !important;
+    border: .1vw rgba(113, 113, 113, 25) solid;
+    animation: blink 1.8s infinite ease-in-out;
+}
+.graficoAmarillo2018 p{
+    visibility: hidden;
+}
+.amarillo2018Hover{
+    background-color: #E5A63D;
+    width: 10%; height: 12.1vw;
+    position: relative;
+    bottom: 12.5vw !important;
+}
+.amarillo2018Hover p{
+    visibility: visible;
+}
+
+.graficoRojo2015{
+    background-color: #FBF8F0;
+    width: 10%; height: 8.9vw;
+    position: relative;
+    bottom: 32.8vw !important;
+    border: .1vw rgba(161, 161, 161, 25) solid;
+    animation: blink 1.8s infinite ease-in-out;
+}
+.rojo2015Hover{
+    background-color: #BC3A3A;
+    width: 10%; height: 8.9vw;
+    position: relative;
+    bottom: 32.8vw !important;
+}
+
+.graficoRojo2016{
+    background-color: #FBF8F0;
+    width: 10%; height: 10vw;
+    position: relative;
+    bottom: 34.8vw !important;
+    border: .1vw rgba(161, 161, 161, 25) solid;
+    animation: blink 1.8s infinite ease-in-out;
+}
+.rojo2016Hover{
+    background-color: #BC3A3A;
+    width: 10%; height: 10vw;
+    position: relative;
+    bottom: 34.8vw !important;
+}
+
+.graficoRojo2017{
+    background-color: #FBF8F0;
+    width: 10%; height: 11.2vw;
+    position: relative;
+    bottom: 37vw !important;
+    border: .1vw rgba(161, 161, 161, 25) solid;
+    animation: blink 1.8s infinite ease-in-out;
+}
+.rojo2017Hover{
+    background-color: #BC3A3A;
+    width: 10.1%; height: 11.2vw;
+    position: relative;
+    bottom: 37vw !important;
+
+}
+
+.graficoRojo2018{
+    background-color: #FBF8F0;
+    width: 10%; height: 12.5vw;
+    position: relative;
+    bottom: 37.8vw !important;
+    border: .1vw rgba(161, 161, 161, 25) solid;
+    animation: blink 1.8s infinite ease-in-out;
+}
+.rojo2018Hover{
+    background-color: #BC3A3A;
+    width: 10%; height: 12.5vw;
+    position: relative;
+    bottom: 37.8vw !important;
+}
+
+.barras{
+    margin-left: 10%;
+}
+
+#val500{
+    font-size: x-large;
+    position: relative;
+    bottom: 53.8vw; left: -4vw;
+}
+#val400{
+    font-size: x-large;
+    position: relative;
+    bottom: 52.4vw; left: -4vw;
+}
+#val300{
+    font-size: x-large;
+    position: relative;
+    bottom: 50.8vw; left: -4vw;
+}
+#val200{
+    font-size: x-large;
+    position: relative;
+    bottom: 49.5vw; left: -4vw;
+}
+#val100{
+    font-size: x-large;
+    position: relative;
+    bottom: 48vw; left: -4vw;
+}
+
+.contitulacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5vw;
+    width: 15vw;
+}
+.contitulacion p{
+    font-size: large;
+    color: #BC3A3A;
+}
+.cuadradorojo{
+    width: 1vw; height: 1vw;
+    background-color: #BC3A3A;
+}
+
+.sintitulacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5vw;
+    width: 15vw;
+    position: relative;
+}
+.sintitulacion p{
+    font-size: large;
+    color: #E5A63D;
+}
+.cuadradoamarillo{
+    width: 1vw; height: 1vw;
+    background-color: #E5A63D;
+}
+
+.indicadores{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    position: relative;
+    bottom: 780px;
+}
+
+#dato2015{
+    font-size: large;
+    color: #717171;
+    position: relative;
+    bottom: 67.5vw; left: 8.4vw;
+    width: fit-content;
+}
+#dato2016{
+    font-size: large;
+    color: #717171;
+    position: relative;
+    bottom: 72vw; left: 24vw;
+    width: fit-content;
+}
+#dato2017{
+    font-size: large;
+    color: #717171;
+    position: relative;
+    bottom: 78vw; left: 39.4vw;
+    width: fit-content;
+}
+#dato2018{
+    font-size: large;
+    color: #717171;
+    position: relative;
+    bottom: 80.8vw; left: 55.4vw;
+    width: fit-content;
+}
+main{
+    height: 592px;
+}
+
+/* Estilo para el botón de desplazamiento hacia arriba */
+.scroll-to-top {
+    position: fixed; /* Fija la posición en la pantalla */
+    bottom: 20px; /* Espacio desde el borde inferior */
+    right: 20px; /* Espacio desde el borde derecho */
+    background-color: #BC3A3A; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Redondea los bordes */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    display: flex; /* Flexbox para centrar el contenido */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 24px; /* Tamaño de la fuente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra del botón */
+}
+
+.scroll-to-top:hover {
+    background-color: #ff7171; /* Color de fondo cuando el cursor pasa sobre el botón */
+}

@@ -1,0 +1,511 @@
+html {
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: #FBF8F0;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+
+.regresar {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 12%; /* Centra verticalmente la descripción */
+    left: 10%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 25px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #717171 ; /* Ajusta el color del texto según sea necesario */
+    text-decoration: underline;
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+
+/* AÑO 2015 */
+.ano2015 {
+    position: relative; /* Necesario para posicionar elementos absolutamente dentro */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    overflow: hidden; /* Asegura que no se desborde el contenido */
+}
+
+.ano2015 img {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 200px; /* Mueve la imagen hacia la izquierda */
+    top: 20%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo2015 {
+    position: absolute; /* Permite posicionar el texto sobre la imagen */
+    top: 50px; /* Ajusta la distancia desde el borde superior según sea necesario */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente el texto */
+    text-align: center;
+    font-size: 35px;
+    color: #722424; /* Ajusta el color del texto según sea necesario */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    text-decoration: underline;
+}
+.highlight-text {
+    color: #E1A83F; /* Color de resaltado */
+    text-decoration: none; /* Elimina el subrayado por defecto del enlace */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+.highlight-text:hover {
+    background-color: rgb(201, 201, 201); 
+    color: #000000;
+}
+
+.descripcion2015 {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 50%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+.descripcion2015ruta {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 80%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+.descripcion2015proposito {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 30%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+.descripcion p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+.imagen2015 img {
+    position: absolute; /* Permite posicionar la imagen dentro del contenedor */
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior del contenedor */
+    margin-left: 850px; /* Mueve la imagen a la derecha del contenedor */
+    max-width: 550px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    top: 400px; /* Ajusta la distancia desde el borde superior del contenedor */
+}
+
+.text-content {
+    margin-top: 450px; /* Espacio entre la imagen y el texto */
+    font-size: 34px; /* Tamaño del texto */
+    color: #000; /* Color del texto */
+    margin-left: 400px;
+    font-weight: bold; /* Aplica negrita al texto */
+
+}
+
+.linea {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 500px; /* Mueve la imagen hacia la izquierda */
+    top: 60%; /* Ajusta la posición vertical desde el borde superior */
+    width: 10px;
+    height: 10px;
+}
+
+.rutagif {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 400px; /* Mueve la imagen hacia la izquierda */
+    top: 10%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 80%;
+    height: auto;
+}
+
+
+.component2015 {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 500px; /* Mueve la imagen hacia la izquierda */
+    top: 32%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 80%;
+    height: auto;
+}
+
+/* AÑO 2017 */
+.ano2017 {
+    position: relative; /* Necesario para posicionar elementos absolutamente dentro */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    overflow: hidden; /* Asegura que no se desborde el contenido */
+}
+
+.ano2017 img {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 200px; /* Mueve la imagen hacia la izquierda */
+    top: 20%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo2017{
+    position: absolute; /* Permite posicionar el texto sobre la imagen */
+    top: 50px; /* Ajusta la distancia desde el borde superior según sea necesario */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente el texto */
+    text-align: center;
+    font-size: 35px;
+    color: #A93939; /* Ajusta el color del texto según sea necesario */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    text-decoration: underline;
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+.descripcion2017 {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 50%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+.imagen2017 img {
+    position: absolute; /* Permite posicionar la imagen dentro del contenedor */
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior del contenedor */
+    margin-left: -180px; /* Mueve la imagen a la derecha del contenedor */
+    max-width: 380px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    top: 350px; /* Ajusta la distancia desde el borde superior del contenedor */
+}
+
+.descripcion2017promover {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 20%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+.component2017 {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 400px; /* Mueve la imagen hacia la izquierda */
+    top: 28%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 80%;
+    height: auto;
+}
+
+/* AÑO 2019 */
+.ano2019 {
+    position: relative; /* Necesario para posicionar elementos absolutamente dentro */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    overflow: hidden; /* Asegura que no se desborde el contenido */
+}
+
+.ano2019 img {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 200px; /* Mueve la imagen hacia la izquierda */
+    top: 20%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo2019{
+    position: absolute; /* Permite posicionar el texto sobre la imagen */
+    top: 50px; /* Ajusta la distancia desde el borde superior según sea necesario */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente el texto */
+    text-align: center;
+    font-size: 35px;
+    color: #A93939; /* Ajusta el color del texto según sea necesario */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    text-decoration: underline;
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+.descripcion2019 {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 50%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    
+}
+
+.imagen2019 img {
+    position: absolute; /* Permite posicionar la imagen dentro del contenedor */
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior del contenedor */
+    margin-left: 800px; /* Mueve la imagen a la derecha del contenedor */
+    max-width: 550px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    top: 350px; /* Ajusta la distancia desde el borde superior del contenedor */
+}
+
+.descripcion2019objetivo {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 30%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+.component20191 {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 520px; /* Mueve la imagen hacia la izquierda */
+    top: 28%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 80%;
+    height: auto;
+}
+
+.descripcion2019plan {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 30%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+.component20192 {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 200px; /* Mueve la imagen hacia la izquierda */
+    top: 33%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 80%;
+    height: auto;
+}
+
+/* AÑO 2020 */
+.ano2020 {
+    position: relative; /* Necesario para posicionar elementos absolutamente dentro */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    overflow: hidden; /* Asegura que no se desborde el contenido */
+}
+
+.ano2020 img {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 200px; /* Mueve la imagen hacia la izquierda */
+    top: 20%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo2020{
+    position: absolute; /* Permite posicionar el texto sobre la imagen */
+    top: 50px; /* Ajusta la distancia desde el borde superior según sea necesario */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente el texto */
+    text-align: center;
+    font-size: 35px;
+    color: #C04242; /* Ajusta el color del texto según sea necesario */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    text-decoration: underline;
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+.descripcion2020 {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 50%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    
+}
+
+.imagen2020 img {
+    position: absolute; /* Permite posicionar la imagen dentro del contenedor */
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior del contenedor */
+    margin-left: -180px; /* Mueve la imagen a la derecha del contenedor */
+    max-width: 380px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    top: 380px; /* Ajusta la distancia desde el borde superior del contenedor */
+}
+
+.descripcion2020beneficiar {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 30%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+.component2020 {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 480px; /* Mueve la imagen hacia la izquierda */
+    top: 38%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 80%;
+    height: auto;
+}
+
+
+/* AÑO 2023 */
+.ano2023 {
+    position: relative; /* Necesario para posicionar elementos absolutamente dentro */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    overflow: hidden; /* Asegura que no se desborde el contenido */
+}
+
+.ano2023 img {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 200px; /* Mueve la imagen hacia la izquierda */
+    top: 20%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo2023{
+    position: absolute; /* Permite posicionar el texto sobre la imagen */
+    top: 50px; /* Ajusta la distancia desde el borde superior según sea necesario */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente el texto */
+    text-align: center;
+    font-size: 35px;
+    color: #DF4F4F; /* Ajusta el color del texto según sea necesario */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    text-decoration: underline;
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+.descripcion2023 {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 50%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+    
+}
+
+.imagen2023 img {
+    position: absolute; /* Permite posicionar la imagen dentro del contenedor */
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior del contenedor */
+    margin-left: 920px; /* Mueve la imagen a la derecha del contenedor */
+    max-width: 350px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    top: 400px; /* Ajusta la distancia desde el borde superior del contenedor */
+}
+
+.descripcion2023restricciones {
+    position: absolute; /* Permite posicionar la descripción sobre la imagen */
+    top: 30%; /* Centra verticalmente la descripción */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente la descripción */
+    text-align: center;
+    font-size: 30px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #000000; /* Ajusta el color del texto según sea necesario */
+    
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados para el fondo */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+.component2023 {
+    position: absolute; /* Permite posicionar la imagen con respecto al contenedor */
+    left: 370px; /* Mueve la imagen hacia la izquierda */
+    top: 28%; /* Ajusta la posición vertical desde el borde superior */
+    max-width: 80%;
+    height: auto;
+}
